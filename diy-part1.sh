@@ -18,3 +18,4 @@
 
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git' feeds.conf.default
+rm -rf tmp && ./scripts/feeds install -f -p helloworld shadowsocksr-libev
